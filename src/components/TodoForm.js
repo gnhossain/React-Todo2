@@ -1,4 +1,5 @@
 import React from 'react';
+import './Todo.css'
 
 class TodoForm extends React.Component{
     //Constructor with state
@@ -10,7 +11,7 @@ class TodoForm extends React.Component{
     }
     handleChanges = e => {
         this.setState({
-            todo: e.target.value //update state with each keystroke
+            todo: e.target.value 
         });
     };
     //class property to submit form
