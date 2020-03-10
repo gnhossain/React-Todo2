@@ -9,7 +9,7 @@ class TodoForm extends React.Component{
         };
     }
     handleChanges = e => {
-        this.state({
+        this.setState({
             todo: e.target.value //update state with each keystroke
         });
     };
@@ -31,7 +31,7 @@ class TodoForm extends React.Component{
               value={this.state.todo}
               onChange={this.handleChanges}
             />
-            <button>Add</button>
+            <button type="submit">Add</button>
           </form>
         );
       }

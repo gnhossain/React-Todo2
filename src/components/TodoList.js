@@ -10,7 +10,7 @@ const TodoList = props => {
                <Todo 
                key={todo.id} 
                todo={todo}
-               toggleDone={props.toggleDone}
+               toggleCompleted={props.toggleCompleted}
                />
             ))}
         </div>
